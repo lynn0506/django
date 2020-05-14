@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/main/question/" method="POST"> 
+    {% csrf_token %}
+    <p> 제목 </p> 
+    <input name="title" /> <br/> 
+    <p> 내용 </p> 
+    <input name="content" /> <br/>
+    <input type="submit" value="submit"/> 
+</form> 
+{% endblock content %}

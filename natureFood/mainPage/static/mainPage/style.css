@@ -1,0 +1,43 @@
+header {
+    width: 100%; 
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: white; 
+    color: green; 
+    text-align:center;
+}
+
+header button {
+    padding: 5px;
+    color: black;
+    border-radius: 13px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #814B08;
+    color: white;
+}
+
+.qna_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.qnas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.qna {
+    border: 1px solid black;
+    width: 80%;
+}
+

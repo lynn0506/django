@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+{% load static %}
+
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <title>Nature Food</title>
+        <link rel="stylesheet" type="text/css" href= "{% static 'mainPage/style.css' %}">
+    </head>
+    <!-- HEADER -->
+    <header>
+        <div> Nature Food </div> 
+        <div class="menus"> 
+            <button>로그인</button> |
+            <button>회원가입</button> |
+            <button>장바구니</button> |
+            <button>주문조회</button>  |
+            <button>마이페이지</button> |
+            <a href="/main/question/" method='GET'>
+                <button>문의사항</button> 
+            </a>
+        </div>
+    </header> 
+    <body> 
+    {% block content %}
+    {% endblock %}
+    </body> 
+</html> 

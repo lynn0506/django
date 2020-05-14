@@ -1,0 +1,8 @@
+*.log
+*.pot
+*.pyc
+__pychache_/
+.DS_store
+local_settings.py
+db.sqlite3
+media

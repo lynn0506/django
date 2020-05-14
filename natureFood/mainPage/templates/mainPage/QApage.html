@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="qna_head">
+        <h3> 문의사항 </h3> 
+        <a href = "/main/question/new"><button>새로 문의하기</button></a>
+    </div>
+    <div class="qnas"> 
+        {% for question in questions %}
+            <div class="qna">
+                <a href="/main/question/{{question.id}}">
+                    <button>자세히보기</button>
+                </a> 
+                <p> {{ question.title }}  </p> 
+                <p> {{ question.content }} </p>
+            </div> 
+        {% endfor %}
+    </div>
+{% endblock content %}
